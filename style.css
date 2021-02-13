@@ -1,0 +1,218 @@
+header .header-banner {
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-size: cover;
+    background-color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: black;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -25px;
+}
+
+header hr {
+    color: grey;
+    border-width: 1.5px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 14px 30px;
+}
+
+nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .logo {
+    background-image: url("img/header.jpg");
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    display: table;
+}
+
+.meist .main-h2 {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin: 30px 0 10px 10px;
+}
+
+.main-h1 {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin: 30px 0 0 10px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 10px 0 0 10px;
+}
+
+.disclaimer {
+    display: none;
+}
+
+.gallery-image img {
+    width: 100%;
+}
+
+.gallery-image {
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}
+
+.container img {
+    border-radius: 50%;
+}
+
+.post-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+}
+
+footer {
+    width: 92%;
+    padding: 10px 20px;
+    background-color: #172029;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    width: fit-content;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: flex;
+    padding: 0 0 5px 0;
+}
+
+footer ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-social {
+    width: 32px;
+}
+
+.footer-social img {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+@media only screen and (min-width: 950px) {
+
+    header nav ul li {
+        padding: 16px 76px;
+    }
+
+    header .logo {
+        width: 100%;
+        height: calc(100vh - 380px);
+    }
+
+    hr {
+        display: none;
+    }
+
+    .meist {
+        margin-left: 25px;
+    }
+
+    .main-h1 {
+        margin-left: 30px;
+    }
+
+    .tekstpildiga {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .disclaimer {
+        display: inline;
+    }
+
+    .disclaimer img {
+        width: 60%;
+        padding-left: 70px;
+    }
+
+    footer {
+        width: 97%;
+    }
+}
